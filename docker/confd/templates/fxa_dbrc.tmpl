@@ -1,0 +1,27 @@
+{
+  "logLevel": "info",
+  "hostname": "0.0.0.0",
+  "port": 8000,
+  "patchKey": "schema-patch-level",
+  "patchLevel": 2,
+  "master": {
+    "user": "root",
+    "password": "",
+    "database": "fxa",
+    "host": "{{ .auth_db_host }}",
+    "port": 3306,
+    "connectionLimit": 10,
+    "waitForConnections": true,
+    "queueLimit": 100
+  },
+  "slave": {
+    "user": "root",
+    "password": "",
+    "database": "fxa",
+    "host": "{{ .auth_db_host }}",
+    "port": 3306,
+    "connectionLimit": 10,
+    "waitForConnections": true,
+    "queueLimit": 100
+  }
+}

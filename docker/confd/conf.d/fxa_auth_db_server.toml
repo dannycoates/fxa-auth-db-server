@@ -1,0 +1,6 @@
+[template]
+keys = [
+  "auth/db/host"
+]
+src = "fxa_dbrc.tmpl"
+dest = "/app/.fxa_dbrc"
