@@ -93,6 +93,8 @@ function createServer(db) {
   api.get('/emailRecord/:id', reply(db.emailRecord))
   api.head('/emailRecord/:id', reply(db.accountExists))
 
+  api.get('/pppRecord/:id', reply(db.pppRecord))
+
   api.get('/__heartbeat__', reply(db.ping))
 
   api.get(
